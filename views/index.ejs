@@ -1,0 +1,61 @@
+<%- include('header') %>
+  <section>
+    <%- include('nav') %>
+      <div class="main">
+        <div class="left">
+          <div class="section">
+            <select id="from" name="sl">
+              <% value.forEach((ele,idx)=> { %>
+                <% if (ele=="English" ) { %>
+                  <option value="<%= key[idx]%>" selected>
+                    <%= ele %>
+                  </option>
+                  <% } else { %>
+                    <option value="<%= key[idx] %>">
+                      <%= ele %>
+                    </option>
+                    <% } %>
+                      <% }) %>
+            </select>
+            <label for="main_lang">
+              voice Language
+            </label>
+            <select id="main_lang" name="Language_name"></select>
+            <label for="lang_Region">
+              voice Region
+            </label>
+            <select id="lang_Region" name="Language_Region">
+            </select>
+          </div>
+          <div id="left_inp_area">
+            <textarea name="text" id="inp_text" cols="30" rows="10"></textarea>
+            <div id="audio_div"><button id="audio_icon_btn"><i class="ri-mic-fill"></i></button></div>
+            <div id="inp_speaker_div"><button id="speaker_icon_btn"><i class="ri-volume-up-fill"></i></button></div>
+          </div>
+          <div class="btn"><button id="main_submit_btn" type="submit">Translate</button></div>
+        </div>
+        <div class="right">
+          <div class="section">
+            <select id="to" name="tl">
+              <% value.forEach((ele,idx)=> { %>
+                <% if (ele=="Japanese" ) { %>
+                  <option value="<%= key[idx]%>" selected>
+                    <%= ele %>
+                  </option>
+                  <% } else { %>
+                    <option value="<%= key[idx] %>">
+                      <%= ele %>
+                    </option>
+                    <% } %>
+                      <% }) %>
+            </select>
+          </div>
+
+          <textarea name="tran_res" id="text_area_of_output" cols="30" rows="10" disabled></textarea>
+
+        </div>
+      </div>
+  </section>
+  <script src="\javascripts\script.js"></script>
+
+  <%- include('footer') %>

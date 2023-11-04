@@ -1,0 +1,36 @@
+<%- include('header') %>
+    <section>
+        <%- include('nav') %>
+            <div class="main">
+                <div class="left">
+                    <div class="section">
+                        <select id="img_from" name="img_sl">
+                        </select>
+                    </div>
+                    <img id="img_uploaded" src="" alt="">
+                    <input type="file" id="fileInput" accept="image/*">
+                    <div class="btn"><button id="uploadButton">Upload Image</button></div>
+                </div>
+                <div class="right">
+                    <div class="section">
+                        <select id="img_to" name="img_tl">
+                            <% value.forEach((ele,idx)=> { %>
+                                <% if (ele=="Japanese" ) { %>
+                                    <option value="<%= key[idx]%>" selected>
+                                        <%= ele %>
+                                    </option>
+                                    <% } else { %>
+                                        <option value="<%= key[idx] %>">
+                                            <%= ele %>
+                                        </option>
+                                        <% } %>
+                                            <% }) %>
+                        </select>
+                    </div>
+                    <textarea name="tran_res" id="text_area_of_output" cols="30" rows="10" disabled></textarea>
+                </div>
+            </div>
+    </section>
+    <script src="\javascripts\img_text.js"></script>
+
+    <%- include('footer') %>
