@@ -1,7 +1,3 @@
-Certainly! Below is a sample Git README for a Google Translate clone named "XYZ Translate" with support for 133 languages for text-to-text translation, 48 languages for voice-to-text translation, and 70+ languages for image-to-text translation:
-
----
-
 # XYZ Translate
 
 XYZ Translate is a versatile translation application that provides support for translating text, voice, and images into multiple languages. With XYZ Translate, you can communicate seamlessly in over 130 languages using text, 48 languages using voice input, and 70+ languages using image-to-text capabilities.
