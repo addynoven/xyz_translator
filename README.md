@@ -46,13 +46,9 @@ XYZ Translate is a versatile translation application that provides support for t
 4. Enter or provide the content to be translated.
 5. Click the "Translate" button.
 
-## Contributing
-
-We welcome contributions to XYZ Translate! If you'd like to contribute, please follow our [Contribution Guidelines](CONTRIBUTING.md).
-
 ## Issues and Bugs
 
-If you encounter any issues or find a bug, please report it on our [Issue Tracker](https://github.com/yourusername/xyz-translate/issues).
+If you encounter any issues or find a bug, please report it on our [Issue Tracker](https://github.com/addynoven/xyz_translator/issues).
 
 ## License
 
